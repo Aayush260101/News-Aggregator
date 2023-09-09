@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Today</title>
+    <!--font awesome-->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <!--API -> 51a7f0e8fbad4e15bb12b19e546e1a66 -->
+</head>
+
+<body>
+    <header>
+        <a href="#" onclick="reload()">
+        <img src="./logo.png" width="250px" />
+        </a>
+        <div class="inputSearch desktop">
+            <form id="searchForm">
+                <input type="text" placeholder="Type to search.." id="searchInput"/>
+                <span id="btn"><i class="fa fa-solid fa-search"></i></span>
+            </form>
+        </div>
+        <nav class="desktop">
+            <ul>
+                <li id="Sports" class="nav-item" onclick="Search('Sports')">Sports</li>
+                <li id="Science" class="nav-item" onclick="Search('Science')">Science</li>
+                <li id="Food" class="nav-item" onclick="Search('Food')">Food</li>
+                <li id="Movies" class="nav-item" onclick="Search('Movies')">Movies</li>
+                <li id="Business" class="nav-item" onclick="Search('Business')">Business</li>
+            </ul>
+        </nav>
+        
+        <div class="menuBtn">
+            <i class="fa fa-solid fa-bars"></i>
+        </div>
+
+        <div class="mobile hidden">
+            <nav>
+                <ul>
+                    <li onclick="Search('Sports')">Sports</li>
+                    <li onclick="Search('Science')">Science</li>
+                    <li onclick="Search('Food')">Food</li>
+                    <li onclick="Search('Movies')">Movies</li>
+                    <li onclick="Search('Business')">Business</li>
+                </ul>
+            </nav>
+            <div class="inputSearch">
+                <form id="searchFormMobile">
+                    <input type="text" placeholder="Type to search.." id="searchInputMobile"/>
+                    <span id="mobilebtn"><i class="fa fa-solid fa-search"></i></span>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="card">
+            <img src="" />
+            <h4></h4>
+            <div class="publishByDate">
+                <p></p>
+                <span>•</span>
+                <p></p>
+            </div>
+            <div class="desc">
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                ©2023 News Today.All Rights Reserved
+            </div>
+            
+            <div class="social-media">
+                <a href="https://github.com/Aayush260101"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/Aayush__26?t=tcXdcfO9fYtYH9gqx-j4vg&s=09"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/aayush_.___?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:kumar.aayush.20021276@gmail.com"><i class="fa fa-regular fa-envelope"></i></a>
+            </div>
+            <div class="api-attribution">
+                Data provided by <a href="https://newsapi.org/">NewsAPI</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

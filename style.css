@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background: #d4d6da;
+}
+
+header{
+    background-color: #ffffff;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    justify-content: space-between;
+    box-shadow: 0px 3px 10px 0 rgba(80,119,242,0.3);
+    
+    
+    
+}
+
+/* nav,.inputSearch{
+    display: none;
+} */
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0px;
+}
+
+nav ul li{
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    color:#8918c6
+}
+
+nav ul li:active{
+    color: red
+}
+
+.nav-item.active{
+    color: #8918c6;
+}
+
+
+
+.inputSearch,form{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 400px;
+    border-radius: 35px;
+    overflow: hidden;
+    border: 1.5px solid #4361ee
+
+}
+
+.inputSearch input{
+    width: 100%;
+    height: 100%;
+    padding: 0px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.inputSearch span{
+    width: 70px;
+    background-color: #4361ee;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.menuBtn{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menuBtn:hover{
+    background-color: #4361ee;
+    color: white;
+}
+
+.desktop{
+    display: none;
+}
+
+@media all and (min-width:700px){
+    header{
+        padding:5px 30px;
+    }
+    .desktop{
+        display: flex;
+    }
+    .menuBtn{
+        display: none;
+    }
+}
+
+.mobile{
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    max-width: 700px;
+    background-color: #d4d6da;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: none;
+    z-index: 2;
+    margin-left: -10px;
+}
+
+.mobile nav,.mobile nav ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile .inputSearch{
+    height: 35px;
+    width: 90%;
+}
+
+.mobile form{
+    width: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+@media all and (min-width:700px){
+    .mobile{
+        display:none
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    box-shadow: 7px 7px 25px 1px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+.card img{
+    min-height: 210px;
+    max-height: 210px;
+    width: 100%;
+}
+
+.card h4,.card div{
+    padding: 5px 10px;
+    margin: 0px;
+}
+
+.publishByDate{
+    display: flex;
+    align-items: center;
+    color: #662121;
+}
+
+.publishByDate p{
+    margin: 0px;
+    font-size: 14px;
+}
+
+.publishByDate span{
+    padding: 0px 5px;
+}
+
+.desc{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin: 0;
+    
+}
+.card a{
+    color: inherit;
+    text-decoration: none;
+}
+
+@media all and (min-width:700px){
+    main{
+        padding: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card h4,.card div{
+        padding: 5px 15px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    flex: 1;
+}
+
+
+
+.social-media {
+    flex: 1;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: right;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.api-attribution {
+    
+    text-align: center;
+    margin: auto;
+}
+
+.api-attribution a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
